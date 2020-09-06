@@ -26,5 +26,9 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@adobe/react-spectrum": "^3.3.0",
+    "normalize.css": "^8.0.1"
   }
 }
