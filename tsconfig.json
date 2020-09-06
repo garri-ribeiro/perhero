@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+		"baseUrl": "./src",
+		"paths": {
+		    "~/*": ["./*"]
+		},
+        "outDir": "dist",
+        "rootDir": "src",
+        "module": "commonjs",
+        "target": "es2019",
+        "jsx": "react",
+        "sourceMap": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "experimentalDecorators": true,
+        "incremental": true,
+        "pretty": true,
+        "lib": [
+            "dom", 
+            "dom.iterable", 
+            "es2019"
+        ],
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+    ]
+}
