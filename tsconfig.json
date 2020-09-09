@@ -1,11 +1,14 @@
 {
+    "compileOnSave": true,
     "compilerOptions": {
-		"baseUrl": "./src",
-		"paths": {
-		    "~/*": ["./*"]
-		},
-        "outDir": "dist",
-        "rootDir": "src",
+        "baseUrl": ".",
+        "paths": {
+            "modules/*": [
+                "src/modules/*"
+            ]
+        },
+        "outDir": "./dist",
+        "rootDir": "./",
         "module": "commonjs",
         "target": "es2019",
         "jsx": "react",
@@ -14,11 +17,11 @@
         "moduleResolution": "node",
         "strict": true,
         "esModuleInterop": true,
+        "isolatedModules": true,
         "allowSyntheticDefaultImports": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "experimentalDecorators": true,
-        "incremental": true,
         "pretty": true,
         "lib": [
             "dom", 
@@ -27,10 +30,9 @@
         ],
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
     ],
     "exclude": [
         "node_modules",
-        "dist",
     ]
 }
